@@ -10,8 +10,6 @@ There are two types of parameters:
     The ones the computer learns (e.g. weight coefficients in a linear regression model)
 """
 #  Importing libraries
-#import numpy as np
-#import matplotlib.pyplot as plt
 import pandas as pd
 
 
@@ -52,8 +50,6 @@ accuracies = cross_val_score(estimator = classifier, # Machine Learning Model
                              cv = 10)                # Number of folds
 accuracies.mean()  # Average Accuracy
 accuracies.std()   # Standard Deviation
-
-
 
 # Applying grid search to find best model and the best parameters
 from sklearn.model_selection import GridSearchCV
