@@ -7,8 +7,6 @@ Splitting the training set into a number of folds(10)
 Training the model on 9 folds and testing it on the 10th fold
 """
 # Importing libraries
-#import numpy as np
-#import matplotlib.pyplot as plt
 import pandas as pd
 
 
@@ -51,4 +49,4 @@ accuracies = cross_val_score(estimator = classifier, # The Model
 accuracies.mean()  # Average
 accuracies.std()   # Standard Deviation(variance)
 
-# mean - std < Accuracy < mean + std
+# mean-std < Accuracy < mean+std
