@@ -11,7 +11,6 @@ Suitable for large datasets
 
 # Importing the libraries
 import numpy as np
-#import matplotlib.pyplot as plt
 import pandas as pd
 
 # Importing the dataset
@@ -56,7 +55,3 @@ accuracies = cross_val_score(estimator = classifier, # The Model
                              n_jobs = -1)            # Uses all the CPUs of your computer(not compulsory)
 accuracies.mean()  # Average
 accuracies.std()   # Standard Deviation(variance)
-
-"""
-https://colab.research.google.com/drive/
-"""
